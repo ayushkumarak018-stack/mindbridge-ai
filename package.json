@@ -1,8 +1,24 @@
 {
-  "name": "react-example",
+  "name": "mindbridge-ai",
+  "version": "1.0.0",
+  "description": "Full-stack real-time AI companion for reflection, 6-stage root-cause problem solving, decision matrices, and SMART goal breakdown powered by Gemini API, React 19, and Firebase.",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ayushkumarak018-stack/mindbridge-ai.git"
+  },
+  "keywords": [
+    "gemini-api",
+    "react-19",
+    "firebase",
+    "firestore",
+    "problem-solver",
+    "ai-companion",
+    "decision-matrix",
+    "smart-goals",
+    "typescript"
+  ],
   "scripts": {
     "dev": "tsx server.ts",
     "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
