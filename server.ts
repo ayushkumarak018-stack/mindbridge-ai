@@ -7,13 +7,15 @@ import { GoogleGenAI } from '@google/genai';
 import admin from 'firebase-admin';
 import firebaseConfig from './firebase-applet-config.json';
 
+const projectId = process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID || firebaseConfig.projectId;
+
 // Initialize Firebase Admin if not already initialized
-if (!(admin as any).apps?.length) {
+if (!(admin as any).apps?.length && projectId && projectId !== 'YOUR_FIREBASE_PROJECT_ID') {
   try {
     (admin as any).initializeApp({
-      projectId: firebaseConfig.projectId,
+      projectId,
     });
-    console.log('[Auth] Firebase Admin initialized for project:', firebaseConfig.projectId);
+    console.log('[Auth] Firebase Admin initialized for project:', projectId);
   } catch (err) {
     console.warn('[Auth] Firebase Admin initialization notice:', err);
   }
