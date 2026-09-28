@@ -1,0 +1,6 @@
+{
+  "name": "MindBridge AI",
+  "description": "An AI-powered personal reflection, journaling, goal-tracking, and real-time problem-solving workspace.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

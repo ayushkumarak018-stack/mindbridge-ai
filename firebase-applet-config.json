@@ -1,0 +1,11 @@
+{
+  "projectId": "carelink-98582",
+  "appId": "1:644965650639:web:247a39a11187f5975a67ba",
+  "apiKey": "AIzaSyAMkSOoMzA80RQaN9rmC4VK3n-IlmTGiqk",
+  "authDomain": "carelink-98582.firebaseapp.com",
+  "databaseURL": "https://carelink-98582-default-rtdb.firebaseio.com",
+  "firestoreDatabaseId": "default",
+  "storageBucket": "carelink-98582.firebasestorage.app",
+  "messagingSenderId": "644965650639",
+  "measurementId": "G-GQ562NWT88"
+}
